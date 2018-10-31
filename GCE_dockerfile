@@ -1,6 +1,10 @@
 FROM rocker/r-ver
 MAINTAINER Steve Miller (s-miller@umn.edu)
 
+## install utilities
+RUN apt-get install -t unstable -y --no-install-recommends \
+    libcurl4-openssl-dev
+
 ## install any necessary packages
 RUN install2.r -error\
     -r 'http://cran.rstudio.com' \
