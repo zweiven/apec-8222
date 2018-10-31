@@ -3,6 +3,7 @@ MAINTAINER Steve Miller (s-miller@umn.edu)
 
 ## install any necessary packages
 RUN install2.r -error\
+    -r 'http://cran.rstudio.com' \
     data.table \
     future \
     future.apply
