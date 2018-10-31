@@ -1,0 +1,8 @@
+FROM rocker/r-ver
+MAINTAINER Steve Miller (s-miller@umn.edu)
+
+## install any necessary packages
+RUN install2.r -error\
+    data.table \
+    future \
+    future.apply
