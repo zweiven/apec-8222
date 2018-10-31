@@ -2,7 +2,7 @@ FROM rocker/r-ver
 MAINTAINER Steve Miller (s-miller@umn.edu)
 
 ## install utilities
-RUN apt-get install -t unstable -y --no-install-recommends \
+RUN apt-get install -y --no-install-recommends \
     libcurl4-openssl-dev
 
 ## install any necessary packages
